@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #0f2f44;
+  --yellow: #ffc712;
+  --primary-font: "Ubuntu", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --third-font: "Abril Fatface", cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 16px 21px;
+  background-color: var(--yellow);
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--main-color);
+  border-radius: 5px;
+}
+
+.heading *:first-child {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.heading *:last-child {
+  color: var(--main-color);
+  font-size: 32px;
+  font-weight: 400;
+  font-family: var(--third-font);
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* common css ends */
+
+/* Header Starts */
+header {
+  background-color: var(--main-color);
+  color: white;
+  padding: 18px 0;
+}
+
+header .welcome,
+header .openingTime {
+  width: 50%;
+}
+header .openingTime {
+  text-align: right;
+}
+/* Header ends */
+
+/* nav starts here */
+nav .logo {
+  width: 40%;
+}
+nav .menu {
+  width: 60%;
+}
+
+nav .menu ul {
+  text-align: right;
+}
+nav .menu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav .menu ul li a {
+  padding: 40px 12px;
+  display: block;
+  color: #222;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav .menu ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+nav .menu ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+nav .menu ul li ul li {
+  display: block;
+}
+
+nav .menu ul li ul li a {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+nav .menu ul li:hover > a {
+  color: var(--yellow);
+  background-color: #fff9e6;
+}
+
+nav .menu ul li a span {
+  display: inline-block;
+  transition: 0.3s;
+}
+
+nav .menu ul li:hover a span {
+  transform: rotate(-180deg);
+}
+
+nav .menu ul li:last-child span {
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius: 50%;
+  line-height: 35px;
+  text-align: center;
+  color: #999;
+  border: 1px solid #dfdfdf;
+}
+
+/* nav ends here */
